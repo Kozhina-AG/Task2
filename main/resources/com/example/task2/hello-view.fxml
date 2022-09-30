@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="318.0" prefWidth="382.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="Выберите фигуру" />
+    <Canvas fx:id="my_canvas" height="200.0" width="200.0" />
+   <AnchorPane prefHeight="47.0" prefWidth="342.0">
+      <children>
+         <RadioButton fx:id="rb1" layoutX="161.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLineClick" text="LIne">
+            <toggleGroup>
+               <ToggleGroup fx:id="shapes" />
+            </toggleGroup></RadioButton>
+         <RadioButton fx:id="rb2" layoutX="231.0" layoutY="14.0" mnemonicParsing="false" onAction="#onTringClick" text="Triangle" toggleGroup="$shapes" />
+         <RadioButton fx:id="rb3" layoutX="46.0" layoutY="14.0" mnemonicParsing="false" onAction="#onReactClick" text="Rectangular" toggleGroup="$shapes" />
+      </children>
+   </AnchorPane>
+</VBox>
